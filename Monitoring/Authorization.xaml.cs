@@ -31,6 +31,11 @@ namespace Monitoring
             Close();
         }
 
+        private void Button_Click_Open(object sender, RoutedEventArgs e)
+        {
+            App app = new App();
+            app.connectionString 
+        }
 
     }
 }

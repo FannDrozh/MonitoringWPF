@@ -44,7 +44,7 @@
                 FontSize="22" 
                 Width="130" 
                 Background="{x:Null}" 
-                BorderBrush="{x:Null}"/>
+                BorderBrush="{x:Null}" Click="Button_Click_Open"/>
         <Button Content="Регистрация" 
                 HorizontalAlignment="Left" 
                 Margin="308,189,0,0" 
