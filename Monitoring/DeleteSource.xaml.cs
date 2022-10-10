@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Monitoring
 {
     /// <summary>
-    /// Логика взаимодействия для AddSource.xaml
+    /// Логика взаимодействия для DeleteSource.xaml
     /// </summary>
-    public partial class AddSource : Window
+    public partial class DeleteSource : Window
     {
-        public AddSource()
+        public DeleteSource()
         {
             InitializeComponent();
         }

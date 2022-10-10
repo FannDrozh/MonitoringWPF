@@ -15,13 +15,20 @@ using System.Windows.Shapes;
 namespace Monitoring
 {
     /// <summary>
-    /// Логика взаимодействия для Autorization.xaml
+    /// Логика взаимодействия для Authorization.xaml
     /// </summary>
-    public partial class Autorization : Window
+    public partial class Authorization : Window
     {
-        public Autorization()
+        public Authorization()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Registration registration = new Registration();
+            registration.Show();
+            Close();
         }
     }
 }

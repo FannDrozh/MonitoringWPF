@@ -399,15 +399,16 @@
         </Grid.ColumnDefinitions>
 
         <Menu Style="{DynamicResource MenuStyle}" Grid.ColumnSpan="2">
+            <Image Source="Image/Logo.png" Height="41"/>
             <MenuItem Style="{DynamicResource MenuItemStyle}" Header="Источник" Height="41">
-                <MenuItem Header="Добавить"/>
-                <MenuItem Header="Удалить"/>
-                <MenuItem Header="Редактировать"/>
+                <MenuItem Header="Добавить" Click="MenuItem_Click"/>
+                <MenuItem Header="Удалить" Click="MenuItem_Click_2"/>
+                <MenuItem Header="Редактировать" Click="MenuItem_Click_1"/>
             </MenuItem>
             <MenuItem Header="Выбросы" Height="41">
-                <MenuItem Header="Добавить"/>
-                <MenuItem Header="Удалить"/>
-                <MenuItem Header="Редактировать"/>
+                <MenuItem Header="Добавить" Click="MenuItem_Click_3"/>
+                <MenuItem Header="Удалить" Click="MenuItem_Click_4"/>
+                <MenuItem Header="Редактировать" Click="MenuItem_Click_5"/>
             </MenuItem>
             <MenuItem Header="Расчет" Height="41">
                 <MenuItem Header="Максимальные выбросы"/>
@@ -415,7 +416,6 @@
                 <MenuItem Header="Средние выбросы"/>
             </MenuItem>
         </Menu>
-
         <Grid x:Name="IstVibgrid"
               Grid.Column="1" Margin="0,39,0,0" Grid.RowSpan="2">
             <Grid.RowDefinitions>
@@ -427,17 +427,17 @@
                 x:Name="DobIst"
                 Grid.Row="0"
                 Margin="5,5,5,5"
-                Content="Добавить источник"/>
+                Content="Добавить источник" Click="DobIst_Click"/>
             <Button Style="{DynamicResource ButtonStyle}"
                 x:Name="DelIst"
                 Grid.Row="1"
                 Margin="5,5,5,5"
-                Content="Удалить источник"/>
+                Content="Удалить источник" Click="DelIst_Click"/>
             <Button Style="{DynamicResource ButtonStyle}"
                 x:Name="EditIst"
                 Grid.Row="2"
                 Margin="5,5,5,5"
-                Content="Редактировать источник"/>
+                Content="Редактировать источник" Click="EditIst_Click"/>
         </Grid>
         <Grid x:Name="Vibrosigrid"
              Grid.Row="2"
@@ -451,17 +451,17 @@
                 x:Name="DobVib"
                 Grid.Row="0"
                 Margin="5,5,5,5"
-                Content="Добавить выбросы"/>
+                Content="Добавить выбросы" Click="DobVib_Click"/>
             <Button Style="{DynamicResource ButtonStyle}"
                 x:Name="DelVib"
                 Grid.Row="1"
                 Margin="5,5,5,5"
-                Content="Удалить выбросы"/>
+                Content="Удалить выбросы" Click="DelVib_Click"/>
             <Button Style="{DynamicResource ButtonStyle}"
                 x:Name="EditVib"
                 Grid.Row="2" 
                 Margin="5,5,5,5"
-                Content="Редактировать выбросы"/>
+                Content="Редактировать выбросы" Click="EditVib_Click"/>
         </Grid>
         <Grid x:Name="Statgrid"
               Grid.Row="3" Margin="0,159,0,0" Grid.RowSpan="2">

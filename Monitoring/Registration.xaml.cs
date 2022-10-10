@@ -23,5 +23,12 @@ namespace Monitoring
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Authorization authorization = new Authorization();
+            authorization.Show();
+            Close();
+        }
     }
 }

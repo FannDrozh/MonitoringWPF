@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Monitoring
 {
     /// <summary>
-    /// Логика взаимодействия для AddSource.xaml
+    /// Логика взаимодействия для AddOutliers.xaml
     /// </summary>
-    public partial class AddSource : Window
+    public partial class AddOutliers : Window
     {
-        public AddSource()
+        public AddOutliers()
         {
             InitializeComponent();
         }

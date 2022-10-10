@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Monitoring"
         mc:Ignorable="d"
-        Title="EditIst" Height="300" Width="400"  ResizeMode="NoResize">
+        Title="Редактирование источника" Height="300" Width="400"  ResizeMode="NoResize">
     <Window.Resources>
         <SolidColorBrush x:Key="Button.Static.Background" Color="#D4575E"/>
         <SolidColorBrush x:Key="Button.Static.Border" Color="#D4575E"/>
@@ -105,6 +105,8 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <Image Source="Image/Logo.png" Height="41" Margin="4,-1,144,55"/>
+        
         <Label Content="Название источника" 
                HorizontalAlignment="Left" 
                Margin="100,27,0,0" 
