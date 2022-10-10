@@ -70,6 +70,11 @@
     <Compile Include="EditOutliers.xaml.cs">
       <DependentUpon>EditOutliers.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Emissions_BarashenkovDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Emissions_BarashenkovDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
     </Compile>
@@ -142,6 +147,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Emissions_BarashenkovDataSet.xsc">
+      <DependentUpon>Emissions_BarashenkovDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Emissions_BarashenkovDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Emissions_BarashenkovDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Emissions_BarashenkovDataSet.xss">
+      <DependentUpon>Emissions_BarashenkovDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

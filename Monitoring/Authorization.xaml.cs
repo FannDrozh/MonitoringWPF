@@ -30,5 +30,7 @@ namespace Monitoring
             registration.Show();
             Close();
         }
+
+
     }
 }
