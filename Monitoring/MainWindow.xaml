@@ -506,7 +506,7 @@
                RenderTransformOrigin="0.586,0.531"/>
         <DataGrid Grid.Row="1" 
                   d:ItemsSource="{d:SampleData ItemCount=5}" 
-                  Margin="5,45,5,10"/>
+                  Margin="5,45,5,10" SelectionChanged="DataGrid_SelectionChanged"/>
         
     </Grid>
 </Window>

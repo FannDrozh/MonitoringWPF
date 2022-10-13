@@ -20,11 +20,12 @@
                    VerticalAlignment="Top" 
                    FontSize="20"/>
         <TextBox HorizontalAlignment="Left" 
+                 x:Name="Log"
                  Margin="28,114,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Width="176" 
-                 FontSize="22"/>
+                 FontSize="22" Cursor="Pen"/>
         <TextBlock HorizontalAlignment="Left" 
                    Margin="28,167,0,0" 
                    TextWrapping="Wrap" 
@@ -33,10 +34,11 @@
                    FontSize="20"/>
         <TextBox HorizontalAlignment="Left" 
                  Margin="28,199,0,0" 
+                 x:Name="Pas"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
                  Width="176" 
-                 FontSize="22"/>
+                 FontSize="22" Cursor="Pen"/>
         <Button Content="Вход" 
                 HorizontalAlignment="Left" 
                 Margin="308,127,0,0" 

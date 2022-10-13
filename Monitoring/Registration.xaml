@@ -21,7 +21,8 @@
                    VerticalAlignment="Top" 
                    FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" 
+        <TextBox x:Name="Log"
+                 HorizontalAlignment="Left" 
                  Margin="28,114,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
@@ -35,7 +36,8 @@
                    VerticalAlignment="Top" 
                    FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" 
+        <TextBox x:Name="Pas"
+            HorizontalAlignment="Left" 
                  Margin="28,199,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
@@ -50,7 +52,7 @@
                 Width="33" 
                 Background="{x:Null}" 
                 BorderBrush="{x:Null}" 
-                Click="Button_Click" Height="25" Cursor="Hand">
+                Click="Button_Click_Open" Height="25" Cursor="Hand">
             <Image Source="Image/back.png" />
         </Button>
 

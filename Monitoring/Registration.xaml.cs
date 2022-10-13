@@ -22,6 +22,8 @@ namespace Monitoring
     /// </summary>
     public partial class Registration : Window
     {
+        public string logreg;
+        public string pasreg;
         public Registration()
         {
             InitializeComponent();
@@ -48,7 +50,10 @@ namespace Monitoring
         }
         private void Button_Click_Open(object sender, RoutedEventArgs e)
         {
-            DataTable dt_user = Select(""); // получаем данные из таблицы
+
+            logreg = Log.Text;
+            pasreg = Pas.Text;
+            DataTable dt_user1 = Select("Insert into Autorization (Login,Password) Values ('"+ logreg +"','"+ pasreg +"');");
 
             Authorization authorization = new Authorization();
             authorization.Show();
