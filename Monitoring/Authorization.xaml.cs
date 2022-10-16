@@ -55,7 +55,7 @@ namespace Monitoring
             using (SqlConnection sqlConnection = new SqlConnection("server=ngknn.ru;Trusted_Connection=No;DataBase=Emissions_Barashenkov;User ID=33П;Password=12357"))
             {
                 sqlConnection.Open();
-                SqlCommand sqlCommand = new SqlCommand("Select Count(*) from Autorization", sqlConnection);
+                SqlCommand sqlCommand = new SqlCommand("Select Count(*) from [dbo].[Autorization]", sqlConnection);
                 int n = Convert.ToInt32(sqlCommand.ExecuteScalar().ToString());
                 for (int i = 1; i <= n; i++)
                 {
@@ -88,7 +88,6 @@ namespace Monitoring
                     }
                 }
             }
-            Close();
 
         }
 
