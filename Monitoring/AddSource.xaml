@@ -100,7 +100,7 @@
         <Button Style="{DynamicResource ButtonStyle}" x:Name="Dob"
                 Grid.Row="2"
                 Margin="36,21,36,31"
-                Content="Добавить"/>
+                Content="Добавить" Click="Dob_Click"/>
 
         <Button x:Name="Cancel"
                 Style="{DynamicResource ButtonStyle}"
