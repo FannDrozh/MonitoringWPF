@@ -193,7 +193,24 @@ namespace Monitoring
             DeleteOutliers deleteOutliers = new DeleteOutliers();
             deleteOutliers.Show();
         }
-
+        //Максимальные выбросы
+        private void MaxVib_Click(object sender, RoutedEventArgs e)
+        {
+            MaxEmission maxEmission = new MaxEmission();
+            maxEmission.Show();
+        }
+        //Минимальные выбросы
+        private void MinVib_Click(object sender, RoutedEventArgs e)
+        {
+            MinEmission minEmission = new MinEmission();
+            minEmission.Show();
+        }
+        //Средние выбросы
+        private void MedVib_Click(object sender, RoutedEventArgs e)
+        {
+            MediumEmission mediumEmission = new MediumEmission();
+            mediumEmission.Show();
+        }
         internal class Vibros
         {
             public int ID_Emission { get; set; }
@@ -211,9 +228,6 @@ namespace Monitoring
 
         }
 
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
+        
     }
 }

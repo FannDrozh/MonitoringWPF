@@ -85,7 +85,6 @@
                   x:Name="MaxEmissionG"
                   d:ItemsSource="{d:SampleData ItemCount=5}" 
                   Margin="5,9,5,7" 
-                  SelectionChanged="DataGrid_SelectionChanged" 
                   Grid.Row="1"/>
         <Button Style="{DynamicResource ButtonStyle}" 
                 Content="Выход" 

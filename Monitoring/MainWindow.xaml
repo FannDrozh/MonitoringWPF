@@ -474,17 +474,17 @@
                     x:Name="MaxVib"
                     Grid.Column="0"
                     Margin="5,5,5,5"
-                    Content="Максимальные выбросы"/>
+                    Content="Максимальные выбросы" Click="MaxVib_Click"/>
             <Button Style="{DynamicResource ButtonStyle}"
                 x:Name="MinVib"
                     Grid.Column="1" 
                     Margin="5,5,5,5"
-                    Content="Минимальные выбросы"/>
+                    Content="Минимальные выбросы" Click="MinVib_Click"/>
             <Button Style="{DynamicResource ButtonStyle}"
-                x:Name="MidVib"
+                x:Name="MedVib"
                     Grid.Column="2"
                     Margin="5,5,5,5"
-                    Content="Средние выбросы"/>
+                    Content="Средние выбросы" Click="MedVib_Click"/>
         </Grid>
 
         <Label Content="Источник выбросов" 
