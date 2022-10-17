@@ -78,6 +78,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Emissions_BarashenkovDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MaxEmission.xaml.cs">
+      <DependentUpon>MaxEmission.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MediumEmission.xaml.cs">
+      <DependentUpon>MediumEmission.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MinEmission.xaml.cs">
+      <DependentUpon>MinEmission.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
     </Compile>
@@ -127,6 +136,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MaxEmission.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MediumEmission.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MinEmission.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Registration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

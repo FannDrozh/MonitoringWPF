@@ -471,7 +471,7 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Button Style="{DynamicResource ButtonStyle}"
-                x:Name="MaxVib"
+                    x:Name="MaxVib"
                     Grid.Column="0"
                     Margin="5,5,5,5"
                     Content="Максимальные выбросы"/>
