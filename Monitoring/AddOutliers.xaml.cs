@@ -32,8 +32,6 @@ namespace Monitoring
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
             Close();
         }
         public DataTable Select(string selectSQL) // функция подключения к базе данных и обработка запросов

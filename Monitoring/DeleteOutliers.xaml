@@ -88,7 +88,7 @@
                 x:Name="Del"
                 Grid.Row="2"
                 Margin="36,21,36,31"
-                Content="Удалить"/>
+                Content="Удалить" Click="Del_Click"/>
 
         <Button Style="{DynamicResource ButtonStyle}"
                 x:Name="Cancel"

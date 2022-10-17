@@ -493,7 +493,7 @@
                Grid.Row="1" 
                VerticalAlignment="Top" 
                RenderTransformOrigin="0.586,0.531"/>
-        <DataGrid 
+        <DataGrid x:Name="SourceG"
                   Grid.Row="3" 
                   d:ItemsSource="{d:SampleData ItemCount=5}" 
                   Margin="5,35,5,5"/>
@@ -505,6 +505,7 @@
                VerticalAlignment="Top" 
                RenderTransformOrigin="0.586,0.531"/>
         <DataGrid Grid.Row="1" 
+                  x:Name="EmissionG"
                   d:ItemsSource="{d:SampleData ItemCount=5}" 
                   Margin="5,45,5,10" SelectionChanged="DataGrid_SelectionChanged"/>
         

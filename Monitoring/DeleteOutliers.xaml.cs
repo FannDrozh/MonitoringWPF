@@ -42,6 +42,11 @@ namespace Monitoring
         }
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
+                Close();
+        }
+
+        private void Del_Click(object sender, RoutedEventArgs e)
+        {
             using (SqlConnection sqlConnection = new SqlConnection("server=ngknn.ru;Trusted_Connection=No;DataBase=Emissions_Barashenkov;User ID=33П;Password=12357"))
             {
                 sqlConnection.Open();
@@ -49,7 +54,6 @@ namespace Monitoring
                 int dele1 = Convert.ToInt32(dele);
                 DataTable sqlCommand = Select($"DELETE FROM [dbo].[Emission] WHERE [ID_Emission] = '{dele1}';");
             }
-                Close();
         }
     }
 }
