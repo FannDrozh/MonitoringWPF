@@ -83,7 +83,7 @@
                Grid.Row="0"/>
 
         <DataGrid 
-                  x:Name="MaxEmissionG"
+                  x:Name="MedEmissionG"
                   d:ItemsSource="{d:SampleData ItemCount=5}" 
                   Margin="5,9,5,7" 
                   Grid.Row="1"/>
@@ -92,7 +92,7 @@
                 HorizontalAlignment="Left" 
                 Margin="204,21,0,0" 
                 VerticalAlignment="Top" 
-                Grid.Row="2" Height="28" Width="92"/>
+                Grid.Row="2" Height="28" Width="92" Click="Button_Click"/>
 
     </Grid>
 </Window>

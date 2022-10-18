@@ -401,21 +401,27 @@
         <Menu Style="{DynamicResource MenuStyle}" Grid.ColumnSpan="2">
             <Image Source="Image/Logo.png" Height="41"/>
             <MenuItem Style="{DynamicResource MenuItemStyle}" Header="Источник" Height="41">
-                <MenuItem Header="Добавить" Click="MenuItem_Click"/>
-                <MenuItem Header="Удалить" Click="MenuItem_Click_2"/>
-                <MenuItem Header="Редактировать" Click="MenuItem_Click_1"/>
+                <MenuItem Header="Добавить" Click="DobIst_Click"/>
+                <MenuItem Header="Удалить" Click="DelIst_Click"/>
+                <MenuItem Header="Редактировать" Click="EditIst_Click"/>
             </MenuItem>
             <MenuItem Header="Выбросы" Height="41">
-                <MenuItem Header="Добавить" Click="MenuItem_Click_3"/>
-                <MenuItem Header="Удалить" Click="MenuItem_Click_4"/>
-                <MenuItem Header="Редактировать" Click="MenuItem_Click_5"/>
+                <MenuItem Header="Добавить" Click="DobVib_Click"/>
+                <MenuItem Header="Удалить" Click="DelVib_Click"/>
+                <MenuItem Header="Редактировать" Click="EditVib_Click"/>
             </MenuItem>
-            <MenuItem Header="Расчет" Height="41">
-                <MenuItem Header="Максимальные выбросы"/>
-                <MenuItem Header="Минимальные выбросы"/>
-                <MenuItem Header="Средние выбросы"/>
+            <MenuItem Header="Расчет" Height="41" Width="59">
+                <MenuItem Header="Максимальные выбросы" Click="MaxVib_Click"/>
+                <MenuItem Header="Средние выбросы" Click="MedVib_Click"/>
+                <MenuItem Header="Минимальные выбросы" Click="MinVib_Click"/>
+            </MenuItem>
+            <MenuItem Click="MenuItem_Click_Update" Width="37">
+                <MenuItem.Icon>
+                    <Image Source="/Image/database.png" Cursor="Wait" Margin="-4,-12,-16,-12"/>
+                </MenuItem.Icon>
             </MenuItem>
         </Menu>
+        
         <Grid x:Name="IstVibgrid"
               Grid.Column="1" Margin="0,39,0,0" Grid.RowSpan="2">
             <Grid.RowDefinitions>
@@ -476,15 +482,15 @@
                     Margin="5,5,5,5"
                     Content="Максимальные выбросы" Click="MaxVib_Click"/>
             <Button Style="{DynamicResource ButtonStyle}"
-                x:Name="MinVib"
-                    Grid.Column="1" 
-                    Margin="5,5,5,5"
-                    Content="Минимальные выбросы" Click="MinVib_Click"/>
-            <Button Style="{DynamicResource ButtonStyle}"
                 x:Name="MedVib"
-                    Grid.Column="2"
+                    Grid.Column="1"
                     Margin="5,5,5,5"
                     Content="Средние выбросы" Click="MedVib_Click"/>
+            <Button Style="{DynamicResource ButtonStyle}"
+                x:Name="MinVib"
+                    Grid.Column="2" 
+                    Margin="5,5,5,5"
+                    Content="Минимальные выбросы" Click="MinVib_Click"/>
         </Grid>
 
         <Label Content="Источник выбросов" 
@@ -507,7 +513,7 @@
         <DataGrid Grid.Row="1" 
                   x:Name="EmissionG"
                   d:ItemsSource="{d:SampleData ItemCount=5}" 
-                  Margin="5,45,5,10" SelectionChanged="DataGrid_SelectionChanged"/>
+                  Margin="5,45,5,10" />
         
     </Grid>
 </Window>

@@ -110,7 +110,7 @@
                 HorizontalAlignment="Left" 
                 Margin="204,21,0,0" 
                 VerticalAlignment="Top" 
-                Grid.Row="2" Height="28" Width="92"/>
+                Grid.Row="2" Height="28" Width="92" Click="Button_Click"/>
 
     </Grid>
 </Window>

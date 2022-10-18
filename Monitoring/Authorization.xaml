@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Monitoring"
         mc:Ignorable="d"
-        Title="Авторизация" Height="300" Width="470"  ResizeMode="NoResize">
+        Title="Авторизация" Height="300" Width="470"  ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="#F59587">
         <Image Source="Image/Logo.png" Margin="-5,0,-5,0" Opacity="0.3"/>
         <Label Content="Авторизация" 

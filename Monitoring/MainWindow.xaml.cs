@@ -133,18 +133,8 @@ namespace Monitoring
             AddSource addSource = new AddSource();
             addSource.Show();
         }
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            AddSource addSource = new AddSource();
-            addSource.Show();
-        }
         //Редактирование ист
         private void EditIst_Click(object sender, RoutedEventArgs e)
-        {
-            EditIst editIst = new EditIst();
-            editIst.Show();
-        }
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
             EditIst editIst = new EditIst();
             editIst.Show();
@@ -155,18 +145,8 @@ namespace Monitoring
             DeleteSource deleteSource = new DeleteSource();
             deleteSource.Show();
         }
-        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
-        {
-            DeleteSource deleteSource = new DeleteSource();
-            deleteSource.Show();
-        }
         //Добавление выб
         private void DobVib_Click(object sender, RoutedEventArgs e)
-        {
-            AddOutliers фddOutliers = new AddOutliers();
-            фddOutliers.Show();
-        }
-        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
         {
             AddOutliers фddOutliers = new AddOutliers();
             фddOutliers.Show();
@@ -177,18 +157,8 @@ namespace Monitoring
             EditOutliers editOutliers = new EditOutliers();
             editOutliers.Show();
         }
-        private void MenuItem_Click_5(object sender, RoutedEventArgs e)
-        {
-            EditOutliers editOutliers = new EditOutliers();
-            editOutliers.Show();
-        }
         //Удаление выб
         private void DelVib_Click(object sender, RoutedEventArgs e)
-        {
-            DeleteOutliers deleteOutliers = new DeleteOutliers();
-            deleteOutliers.Show();
-        }
-        private void MenuItem_Click_4(object sender, RoutedEventArgs e)
         {
             DeleteOutliers deleteOutliers = new DeleteOutliers();
             deleteOutliers.Show();
@@ -228,6 +198,11 @@ namespace Monitoring
 
         }
 
-        
+        private void MenuItem_Click_Update(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            Close();
+            mainWindow.Show();
+        }
     }
 }
