@@ -59,7 +59,7 @@ namespace Monitoring
                 int n = Convert.ToInt32(sqlCommand.ExecuteScalar().ToString());
                 for (int i = 1; i <= n; i++)
                 {
-                    SqlCommand sqlCommand1 = new SqlCommand("SELECT [Login] FROM [dbo].[Autorization] Where [ID_Log] = " + i + "", sqlConnection);
+                    SqlCommand sqlCommand1 = new SqlCommand($"SELECT [Login] FROM [dbo].[Autorization] Where [ID_Log] = '{ i } '", sqlConnection);
 
                     log = sqlCommand1.ExecuteScalar().ToString();
                     if (log == Log.Text)

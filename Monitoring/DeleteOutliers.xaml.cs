@@ -53,6 +53,7 @@ namespace Monitoring
                 dele = IdEmis.Text;
                 int dele1 = Convert.ToInt32(dele);
                 DataTable sqlCommand = Select($"DELETE FROM [dbo].[Emission] WHERE [ID_Emission] = '{dele1}';");
+                Close();
             }
         }
     }
