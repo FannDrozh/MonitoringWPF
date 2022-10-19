@@ -1,19 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Data.SqlClient;
 using System.Data;
-using System.Configuration;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Windows;
 
 namespace Monitoring
 {
@@ -59,7 +47,7 @@ namespace Monitoring
                 int n = Convert.ToInt32(sqlCommand.ExecuteScalar().ToString());
                 for (int i = 1; i <= n; i++)
                 {
-                    SqlCommand sqlCommand1 = new SqlCommand($"SELECT [Login] FROM [dbo].[Autorization] Where [ID_Log] = '{ i } '", sqlConnection);
+                    SqlCommand sqlCommand1 = new SqlCommand($"SELECT [Login] FROM [dbo].[Autorization] Where [ID_Log] = '{i} '", sqlConnection);
 
                     log = sqlCommand1.ExecuteScalar().ToString();
                     if (log == Log.Text)
@@ -67,7 +55,7 @@ namespace Monitoring
                         int h = i;
                         SqlCommand command2 = new SqlCommand("SELECT [Password] FROM [dbo].[Autorization] WHERE [ID_Log] = " + h + "", sqlConnection);
                         par = command2.ExecuteScalar().ToString();
-                        if (par == Pas.Text)
+                        if (par == Pas.Password)
                         {
                             MainWindow glavnaya = new MainWindow();
                             glavnaya.Show();

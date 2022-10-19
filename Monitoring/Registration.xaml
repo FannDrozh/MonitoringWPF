@@ -52,7 +52,7 @@
                 Width="33" 
                 Background="{x:Null}" 
                 BorderBrush="{x:Null}" 
-                Click="Button_Click_Open" Height="25" Cursor="Hand">
+                Click="Button_Click" Height="25" Cursor="Hand">
             <Image Source="Image/back.png" />
         </Button>
 

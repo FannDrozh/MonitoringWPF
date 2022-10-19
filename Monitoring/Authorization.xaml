@@ -32,13 +32,6 @@
                    Text="Пароль" 
                    VerticalAlignment="Top" 
                    FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" 
-                 Margin="28,199,0,0" 
-                 x:Name="Pas"
-                 TextWrapping="Wrap" 
-                 VerticalAlignment="Top" 
-                 Width="176" 
-                 FontSize="22" Cursor="Pen"/>
         <Button Content="Вход" 
                 HorizontalAlignment="Left" 
                 Margin="308,127,0,0" 
@@ -47,6 +40,13 @@
                 Width="130" 
                 Background="{x:Null}" 
                 BorderBrush="{x:Null}" Click="Button_Click_Open"/>
+
+        <PasswordBox HorizontalAlignment="Left" 
+                 Margin="28,199,0,0" 
+                 x:Name="Pas" 
+                 VerticalAlignment="Top" 
+                 Width="176" 
+                 FontSize="22" Cursor="Pen"/>
         <Button Content="Регистрация" 
                 HorizontalAlignment="Left" 
                 Margin="308,189,0,0" 
