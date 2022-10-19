@@ -61,6 +61,7 @@
                 Margin="324,155,0,0" 
                 VerticalAlignment="Top" 
                 FontSize="22"
+                Click="Button_Click_Open"
                 Background="{x:Null}" 
                 BorderBrush="{x:Null}" Cursor="Hand"/>
 

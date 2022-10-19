@@ -85,7 +85,7 @@
         <TextBox x:Name="IdIst"
                  Grid.ColumnSpan="2"
                  Width="200" 
-                 Margin="100,53,100,10" TextChanged="IdIst_TextChanged"/>
+                 Margin="100,53,100,10" />
 
         <Label Content="Количество выбросов" 
                HorizontalAlignment="Left" 

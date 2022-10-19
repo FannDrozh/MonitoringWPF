@@ -56,10 +56,5 @@ namespace Monitoring
             DataTable addemis = Select("Insert into Emission (ID_Source,count,Text,date) Values ('"+ idsource +"','"+ count +"','"+ comment +"','"+ dt +"');");
             Close();
         }
-
-        private void IdIst_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }
