@@ -1,3 +1,3 @@
 # MonitoringWPF
-Варта 0310
+Последняя версия:
 [Monitoring.zip](https://github.com/FannDrozh/MonitoringWPF/files/9821734/Monitoring.zip)
