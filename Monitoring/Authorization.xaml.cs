@@ -40,42 +40,23 @@ namespace Monitoring
         }
         private void Button_Click_Open(object sender, RoutedEventArgs e)
         {
-            using (SqlConnection sqlConnection = new SqlConnection("server=ngknn.ru;Trusted_Connection=No;DataBase=Emissions_Barashenkov;User ID=33П;Password=12357"))
+            if (Log.Text.Length > 0) // проверяем введён ли логин     
             {
-                sqlConnection.Open();
-                SqlCommand sqlCommand = new SqlCommand("Select Count(*) from [dbo].[Autorization]", sqlConnection);
-                int n = Convert.ToInt32(sqlCommand.ExecuteScalar().ToString());
-                for (int i = 1; i <= n; i++)
-                {
-                    SqlCommand sqlCommand1 = new SqlCommand($"SELECT [Login] FROM [dbo].[Autorization] Where [ID_Log] = '{i} '", sqlConnection);
-
-                    log = sqlCommand1.ExecuteScalar().ToString();
-                    if (log == Log.Text)
+                if (Pas.Password.Length > 0) // проверяем введён ли пароль         
+                {             // ищем в базе данных пользователя с такими данными         
+                    DataTable dt_user = Select("SELECT * FROM [dbo].[Autorization] WHERE [Login] = '" + Log.Text + "' AND [Password] = '" + Pas.Password + "'");
+                    if (dt_user.Rows.Count > 0) // если такая запись существует       
                     {
-                        int h = i;
-                        SqlCommand command2 = new SqlCommand("SELECT [Password] FROM [dbo].[Autorization] WHERE [ID_Log] = " + h + "", sqlConnection);
-                        par = command2.ExecuteScalar().ToString();
-                        if (par == Pas.Password)
-                        {
-                            MainWindow glavnaya = new MainWindow();
-                            glavnaya.Show();
-                            Close();
-                            break;
-
-                        }
-                        else
-                        {
-                            MessageBox.Show("Неверный пароль");
-                            break;
-                        }
+                        MessageBox.Show("Пользователь авторизовался"); // говорим, что авторизовался 
+                        MainWindow mainWindow = new MainWindow();
+                        mainWindow.Show();
+                        Close();
                     }
-                    else
-                    {
-                        MessageBox.Show("Проверьте введенные данные");
-                        break;
-                    }
+                    else MessageBox.Show("Пользователя не найден"); // выводим ошибку  
                 }
+                else MessageBox.Show("Введите пароль"); // выводим ошибку    
             }
+            else MessageBox.Show("Введите логин"); // выводим ошибку 
 
         }
 
